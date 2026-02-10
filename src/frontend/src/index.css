@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+        /* E-commerce vibrant palette - Light mode */
+        --background: 0.99 0 0;
+        --foreground: 0.15 0 0;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        /* Primary: Rich purple for CTA */
+        --primary: 0.45 0.22 280;
+        --primary-foreground: 0.99 0 0;
+        /* Secondary: Warm coral accent */
+        --secondary: 0.75 0.15 25;
+        --secondary-foreground: 0.99 0 0;
+        --muted: 0.96 0.01 260;
+        --muted-foreground: 0.50 0.02 260;
+        --accent: 0.94 0.03 280;
+        --accent-foreground: 0.25 0.15 280;
+        --destructive: 0.55 0.22 15;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.90 0.01 260;
+        --input: 0.92 0.01 260;
+        --ring: 0.45 0.22 280;
+        /* Success for completed orders */
+        --success: 0.60 0.18 145;
+        --success-foreground: 0.99 0 0;
+        /* Warning for pending states */
+        --warning: 0.70 0.18 60;
+        --warning-foreground: 0.15 0 0;
+    }
+
+    .dark {
+        /* Dark mode - sophisticated e-commerce */
+        --background: 0.12 0.01 260;
+        --foreground: 0.96 0.01 260;
+        --card: 0.16 0.02 260;
+        --card-foreground: 0.96 0.01 260;
+        --popover: 0.14 0.02 260;
+        --popover-foreground: 0.96 0.01 260;
+        /* Primary: Bright purple for dark mode */
+        --primary: 0.65 0.25 280;
+        --primary-foreground: 0.99 0 0;
+        /* Secondary: Vibrant coral */
+        --secondary: 0.70 0.18 25;
+        --secondary-foreground: 0.99 0 0;
+        --muted: 0.22 0.02 260;
+        --muted-foreground: 0.65 0.02 260;
+        --accent: 0.25 0.05 280;
+        --accent-foreground: 0.85 0.15 280;
+        --destructive: 0.60 0.25 15;
+        --destructive-foreground: 0.99 0 0;
+        --border: 0.25 0.02 260;
+        --input: 0.22 0.02 260;
+        --ring: 0.65 0.25 280;
+        --success: 0.65 0.20 145;
+        --success-foreground: 0.99 0 0;
+        --warning: 0.75 0.20 60;
+        --warning-foreground: 0.12 0 0;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+

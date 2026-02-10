@@ -1,0 +1,19 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH color system featuring a vibrant e-commerce palette with rich purple primary, warm coral secondary, and success/warning colors for order states in both light and dark modes.",
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, theme provider, authentication context, and routing for all pages including home, products, cart, checkout, admin, and payment status pages with role-based access control.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including products (CRUD, featured), cart management, Stripe configuration, checkout sessions, and banners with proper state invalidation and error handling.",
+  "frontend/src/components/Header.tsx": "Responsive navigation header with logo, navigation links, shopping cart badge, login/logout functionality, admin link for authorized users, and mobile menu drawer.",
+  "frontend/src/components/Footer.tsx": "Simple footer component with copyright notice and caffeine.ai attribution with heart icon.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Placeholder modal component for user profile setup that can be extended if backend user profile functionality is added in the future.",
+  "frontend/src/components/AccessDeniedScreen.tsx": "Full-screen access denied component with shield icon, customizable message, and navigation button to return home.",
+  "frontend/src/components/ProductCard.tsx": "Reusable product card component displaying product image, name, description, price, featured badge, and add-to-cart button with hover effects.",
+  "frontend/src/components/StripeSetupModal.tsx": "Modal dialog for configuring Stripe payment settings including secret key and allowed countries with form validation.",
+  "frontend/src/pages/HomePage.tsx": "Homepage with hero banner, feature highlights, featured products grid, and promotional banner section with gradient backgrounds and call-to-action buttons.",
+  "frontend/src/pages/ProductsPage.tsx": "Product catalog page with search functionality, responsive grid layout, loading states, and empty state handling.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Detailed product view with image carousel, product information, featured badge, price display, description, and add-to-cart functionality.",
+  "frontend/src/pages/CartPage.tsx": "Shopping cart page displaying cart items with images, quantities, prices, remove functionality, order summary, and checkout button with empty state handling.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page with order summary, Stripe payment integration, and automatic Stripe configuration prompt if not yet configured.",
+  "frontend/src/pages/PaymentSuccessPage.tsx": "Payment success confirmation page with success icon, confirmation message, and navigation options that automatically clears the cart.",
+  "frontend/src/pages/PaymentFailurePage.tsx": "Payment failure page with error icon, failure message, and options to retry payment or return to cart.",
+  "frontend/src/pages/AdminPage.tsx": "Admin dashboard with tabbed interface for product management (add, edit, delete, toggle featured) and Stripe configuration with image upload progress tracking."
+}
